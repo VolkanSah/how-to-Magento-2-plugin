@@ -5,7 +5,6 @@
 - Inside the module directory, create a registration.php file with the following code:
 
 ```php
-Copy code
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
@@ -39,9 +38,7 @@ Create a etc/di.xml file in your module directory with the following code:
 - Create a new PHP file at the following location: MyCompany/PostSort/Plugin/Backend/Block/Widget/Grid.php. The file should contain the following code:
 ``` php
 <?php
-
 namespace MyCompany\PostSort\Plugin\Backend\Block\Widget;
-
 class Grid
 {
     public function beforeSetCollection(\Magento\Backend\Block\Widget\Grid $subject, $collection)
